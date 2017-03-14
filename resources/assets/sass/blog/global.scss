@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: url("../../images/bg.webp") #F2F2F2;
+}
+
+main {
+    flex: 1 0 auto;
+    overflow: hidden;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.card-content {
+    .markdown-body img:not(.emoji), .markdown-reply img:not(.emoji) {
+        max-width: none;
+    }
+}
+
+.preloader-wrapper {
+  &.tiny {
+      width: 20px;
+      height: 20px;
+  }
+}
+
+.align-bottom {
+    vertical-align: bottom;
+}
