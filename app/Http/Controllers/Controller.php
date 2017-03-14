@@ -10,7 +10,12 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use App\Repositories\PostRepository;
 use App\Repositories\CategoryRepository;
 use App\Repositories\TagRepository;
-
+use App\Models\Role;
+use App\Models\User;
+use App\Models\Permission;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Config;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
@@ -44,7 +49,17 @@ class Controller extends BaseController
      */
     public function index()
     {
-        return view('blog.index');
+//        $user = User::where('username', '=', 'michele')->first();
+//        $admin = Role::where('id', '=', '1')->first();
+//        $createPost = Permission::where('id', '=', '1')->first();
+//        $admin->attachPermission($createPost);
+//        var_dump(Auth::user());
+//       echo  $user->hasRole('owner');   // false
+//      $user->hasRole('admin');   // true
+//        echo $user->can('edit-user');   // false
+//        echo $user->can('create-post'); // true
+        exit();
+//        return view('blog.index');
     }
 
     /**
