@@ -58,7 +58,7 @@ class Controller extends BaseController
 //      $user->hasRole('admin');   // true
 //        echo $user->can('edit-user');   // false
 //        echo $user->can('create-post'); // true
-        exit();
+// Auth::user()->id;
 //        return view('blog.index');
     }
 
